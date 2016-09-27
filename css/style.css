@@ -1,0 +1,347 @@
+html, body{
+	margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Open Sans',sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.navbar-biser a{
+	color:#fff;
+	/* position: absolute;
+	top:0;
+	right:0;
+	z-index: 99; */
+
+}
+.navbar-biser {
+	z-index: 99;
+	padding:  3em 3em 0;
+	max-width: 1170px;
+    margin: 0 auto;
+}
+.navbar-biser ul{
+	float: right;
+}
+.navbar-brand span {
+	color:#dab360;
+
+}
+.icon-bar{
+	background-color: #fff;
+}
+.header-bg{
+	background-image: url(../img/bg.jpg);
+	background-size: cover;
+    width: 100%;
+  /*   margin-top: -20%;  */
+    position: relative;
+    padding-top: 66.6%;
+}
+.header-bg-darker{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+.header-bg-inner {
+	position: absolute;
+	z-index: 99;
+	top:50%;
+	left:50%;
+	transform: translateY(-50%);
+}
+.header_title{
+	font-size: 2em;
+    text-align: center;
+    color: #eee8a3;
+    line-height: 60px;
+    font-weight: 500;
+}
+.header_subtitle{
+	text-align: center;
+	font-style: italic;
+	font-size: 2em;
+    color: #ff81b9;
+    font-family: 'IM Fell Double Pica',serif;
+}
+.our_service_des{
+	font-family: 'IM Fell Double Pica',serif;
+	text-align: center;
+	font-style: italic;
+	font-size: 1.5em;
+}
+.header-golden-line{
+	background-color: #eee8a3;
+    clear: both;
+    height: 1px;
+    max-width: 80px;
+    margin-left: -40px;
+}
+.header_description{
+	font-size: 1.5em;
+    text-align: center;
+    color: #eee8a3;
+    font-family: 'IM Fell Double Pica',serif;
+    font-style: italic;
+    margin-bottom: 30px;
+
+}
+.header_url_down, .header_url_down:hover, .header_url_down:focus{
+	display: block;
+	cursor: pointer;
+	 text-align: center;
+    font-size: 1.8em;
+    color: #eee8a3;
+    position: static;
+    font-family:'Glyphicons Halflings';
+    text-decoration: none;
+}
+
+.action:after{
+	content: '\e259';
+}
+.left_header{
+	margin-left: -100%;
+}
+.text-center{
+	text-align: center;
+}
+.more_title{
+	padding-top: 2em;
+	font-size: 3em;
+}
+.block_title{
+	font-size: 3em;
+}
+.padding_title{
+	padding-top: 60px;
+}
+.block_not_white{
+	background-color: rgba(245,245,245,0.5) 
+}
+.more_d {
+	font-size: 1.5em;
+	font-style: italic;
+	font-family: 'IM Fell Double Pica',serif;
+}
+.golden-line{
+	background-color: #dab360;
+    clear: both;
+    height: 1px;
+    max-width: 80px;
+    margin: 20px auto;
+}
+.colpad{
+	margin-bottom: 20px;
+}
+.margin-top-80 {
+    margin-top: 80px;
+}
+.col_more_column h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.col_more_column p{
+	color:#858585;
+}
+.more_about_columns i{
+	color:#dab360;
+}
+li .img-circle {
+	width: 140px;
+	height: 140px;
+}
+.service_tabs ul{
+	margin: 0 auto;
+	width: 802.64px;
+	text-align: center;
+}
+.service_nav li {
+	float:left;
+	padding: 3em 2em;
+	cursor: pointer;
+	background-color: rgb(242, 240, 240);
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), color-stop(0.5, rgb(251, 249, 249)), color-stop(0.5, rgb(247, 245, 246)), to(rgb(248, 248, 248)));
+    box-shadow: rgba(255, 255, 255, 0.17) 0px 1px 0px inset, rgba(0, 0, 0, 0.10) 0px 1px 2px;
+}
+.service_nav li.active{
+	background: #fff;
+    color: #333;
+    border-top: solid 2px #dab158;
+    box-shadow: 0px -1px 1px 0 rgba(0, 0, 0, 0.16);
+}
+.service_nav li div {
+	padding-top:1em;
+	font-size: 1.2em; 
+}
+.service_nav a, .service_nav a:hover{
+	padding:0 !important;
+	background-color: rgba(255, 255, 255, 0) !important; 
+	color:black;
+}
+.tab_text p {
+	font-size: 1.3em;
+}
+.tab_img{
+	margin-top: 3em;
+	float:right !important;
+	width:320px;
+	display: block;
+}
+.tab_container{
+	width: 1170px;
+	background: #fff;
+	border: 1px solid #efefef;
+    box-shadow: rgba(255, 255, 255, 0.17) 0px 1px 0px inset, rgba(0, 0, 0, 0.10) 0px 1px 2px;
+}
+.bg_adv{
+	background: url(../img/bg_adv.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+	position: relative;
+	height: 800px;
+
+}
+.bg_darker {
+	position: absolute;
+    top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.36);
+}
+.our_advantages .title_white{
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+	padding-top: 4em;
+}
+.desc_white{
+	color: #fff;
+	font-style: italic;
+	font-family: 'IM Fell Double Pica',serif;
+	font-size: 1.4em;
+	text-align: center;
+}
+.q_desk{
+	color: #fff;
+	font-size: 1.2em;
+	padding: 0 1em;
+}
+.Q_title{
+	color: #e2b960;
+	position: relative;
+	font-size: 1.8em;
+}
+.q_icon_number{
+	color: #e2b960;
+	position: absolute;
+	top:-25px;
+	left:-60px;
+	font-style: italic;
+	font-size: 2em;
+	font-family: 'IM Fell Double Pica',serif;
+}
+.question {
+	padding: 2em 0;
+
+}
+.bg_enjoy {
+	background: url(../img/bg_enjoy.jpg) no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+	position: relative;
+	height: 600px;
+}
+.enjoy_blank{
+	background: #f7f7f7;
+	max-width: 450px;
+	margin: 40px auto;
+	padding: 20px 30px;
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+	position: relative;
+}
+.blank_title {
+	font-size: 2em;
+	text-align: center;
+}
+.blank_subtitle {
+	font-size: 1.2em;
+	font-family: 'IM Fell Double Pica',serif;
+	font-style: italic;
+	text-align: center;
+	padding-bottom: 20px;
+}
+.enjoy_btn {
+	margin-top: 15px;
+	padding: 10px 15px !important;
+	width:100%;
+	box-shadow: 0 3px 0 #9f7f3a,0 3px 5px rgba(0,0,0,0.5);
+    text-align: center;
+    background: #e5bc63;
+    background: -moz-linear-gradient(top,#e5bc63 0%,#cea54c 100%);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#e5bc63),color-stop(100%,#cea54c));
+    background: -webkit-linear-gradient(top,#e5bc63 0%,#cea54c 100%);
+    background: -o-linear-gradient(top,#e5bc63 0%,#cea54c 100%);
+    background: -ms-linear-gradient(top,#e5bc63 0%,#cea54c 100%);
+    background: linear-gradient(to bottom,#e5bc63 0%,#cea54c 100%);
+}
+.why_choose_us {
+	padding: 4em 0 1em;
+}
+.why_choose_us_title {
+	font-size: 2em;
+	text-align: center;
+}
+.why_choose_us_subtitle {
+	text-align: center;
+	font-size: 1.2em;
+}
+.deploy_img img{
+	width: 75%;
+}
+.why_choose_us_deploy {
+	font-size: 1.2em;
+	line-height: 3;
+}
+.why_choose_us_deploy ul {
+	list-style-type: none;
+}
+@media screen and (max-device-width: 1024px){
+	.navbar-biser {
+		color:#000;
+		background-color: #fff;	
+		text-align: center;
+		padding:0;
+	}
+	.navbar-biser ul{
+			float: none;
+	}
+	.navbar-biser a{	
+		color:#000;
+	}
+	.icon-bar {
+		background-color: #000;
+	}
+	.header-bg{
+		margin-top: 50px;
+
+	}
+	.service_tabs ul{
+		width: 100%;
+	}
+	.tab_container{
+		width: 100%;
+	}
+}
+
+/* .container-fluid .in ul{
+	text-align: right;
+	background-color: #fff;
+	color:#000;
+} */
