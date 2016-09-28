@@ -172,6 +172,7 @@ html, body{
 }
 .more_about_columns i{
 	color:#dab360;
+	text-shadow: 10px 10px 3px rgba(0,0,0,0.1);
 }
 li .img-circle {
 	width: 140px;
