@@ -15,7 +15,7 @@ $(window).scroll(function() {
         $(".pq-list>li.active>div").slideDown("slow");
       }
       else{
-      	$('div', this).hide();
+      	$('div', this).hide("fast");
       }
    });
 
