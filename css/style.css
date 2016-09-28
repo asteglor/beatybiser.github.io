@@ -421,7 +421,54 @@ li .img-circle {
 		width: 204px;
 	}
 }
-
+.when_scroll {
+		color:#000;
+		text-align: center;
+		width: 100%;
+		padding:0;
+		border-radius: 0 4px 0 4px;
+		webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	}
+.when_scroll a {
+		color:#000;
+		webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	}
+.when_scroll .navbar-brand span:first-child {
+		color:#000;
+		webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	}
+.when_scroll .icon-bar {
+		background-color: #000;
+		webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+	}
+.white_block{
+	background-color: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    width: 100%;
+    height: 51px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    webkit-animation: slideInDown 1s both;
+    animation: slideInDown 1s both;
+}		
 /* .container-fluid .in ul{
 	text-align: right;
 	background-color: #fff;

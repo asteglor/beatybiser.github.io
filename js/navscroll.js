@@ -1,0 +1,7 @@
+function scroll_nav(){
+	return $(window).scrollTop()>500;
+};
+$(window).scroll(function() {
+  $('nav').toggleClass("when_scroll", scroll_nav());
+  $('whitediv').toggleClass("white_block", scroll_nav());
+});
