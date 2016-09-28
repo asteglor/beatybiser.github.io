@@ -108,26 +108,71 @@ html, body{
     position: relative;
     font-family:'Glyphicons Halflings';
     text-decoration: none;
-    -webkit-animation-name: example; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
-    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+     -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
 }
-@-webkit-keyframes example {
-    0%   {left:0px; top:0px;}
-    25%  {left:0px; top:40px;}
-    50%  {left:0px; top:0px;}
-    75%  {left:0px; top:20px;}
-    100% {left:0px; top:0px;}
+@-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
 }
-@keyframes example {
-    0%   {left:0px; top:0px;}
-    25%  {left:0px; top:40px;}
-    50%  {left:0px; top:0px;}
-    75%  {left:0px; top:40px;}
-    100% {left:0px; top:0px;}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
 }
 
 .action:after{
@@ -353,6 +398,42 @@ li .img-circle {
 }
 .why_choose_us_deploy ul {
 	list-style-type: none;
+}
+.pq-list{
+	 margin-top: 32px;
+}
+.pq-list li{
+	font-size: 16px;
+    line-height: 25px;
+	padding-bottom: 25px;
+    padding-left: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.pq-list li:before {
+	content:"+";
+	width: 18px;
+    height: 18px;
+    font-size: 20px;
+    line-height: 17px;
+    text-align: center;
+	border: 1px solid #dab360;
+    color: #dab360;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+.pq-list>li.active:before{
+	content:"-";
+}
+.pq_div_hide {
+	display: none;
+}
+.pq-list>li.active>div{
+	display: block;
 }
 @media screen and (max-device-width: 1024px){
 	.header_title{
