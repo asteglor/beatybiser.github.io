@@ -37,7 +37,7 @@ html, body{
 	background-image: url(../img/bg.jpg);
 	background-size: cover;
     width: 100%;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
   /*   margin-top: -20%;  */
     position: relative;
     padding-top: 66.6%;
