@@ -176,7 +176,7 @@ li .img-circle {
     border-top: solid 2px #dab158;
     box-shadow: 0px -1px 1px 0 rgba(0, 0, 0, 0.16);
 }
-.service_nav li div {
+.litab_title {
 	padding-top:1em;
 	font-size: 1.2em; 
 }
@@ -344,19 +344,34 @@ li .img-circle {
 	.tab_container{
 		width: 100%;
 	}
-	.li .img-circle {
-		width: 90px;
-		height: 90px;
+	li .img-circle {
+	width: 60px;
+	height: 60px;
+	}
+	.litab_title {
+		font-size: 0.7em;
+	}
+	.tab_container .row .tab_img img{
+		width: 634px;
 	}
 	.bg_adv, .header-bg, .bg_enjoy{
 		background-attachment: scroll; 
 	}
 
 }
-@media screen and (max-device-width: 800px){
-	.li .img-circle {
-		width: 40px;
-		height: 40px;
+@media screen and (max-device-width: 414px){
+	li .img-circle {
+	width: 40px;
+	height: 40px;
+	}
+	.tab_container .row .tab_img img{
+		width: 259px;
+	}
+
+}
+@media screen and (max-device-width: 320px){
+	.tab_container .row .tab_img img{
+		width: 204px;
 	}
 }
 
