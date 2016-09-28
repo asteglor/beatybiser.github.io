@@ -37,6 +37,7 @@ html, body{
 	background-image: url(../img/bg.jpg);
 	background-size: cover;
     width: 100%;
+    background-attachment: fixed;
   /*   margin-top: -20%;  */
     position: relative;
     padding-top: 66.6%;
@@ -158,7 +159,7 @@ li .img-circle {
 }
 .service_tabs ul{
 	margin: 0 auto;
-	width: 802.64px;
+	width: 90%;
 	text-align: center;
 }
 .service_nav li {
@@ -187,25 +188,22 @@ li .img-circle {
 .tab_text p {
 	font-size: 1.3em;
 }
-.tab_img{
-	margin-top: 3em;
-	float:right !important;
-	width:320px;
-	display: block;
-}
 .tab_container{
-	width: 1170px;
+	width: 100%;
+	padding: 1em 3em;
 	background: #fff;
 	border: 1px solid #efefef;
     box-shadow: rgba(255, 255, 255, 0.17) 0px 1px 0px inset, rgba(0, 0, 0, 0.10) 0px 1px 2px;
+}
+.tab_img {
+	padding: 2em 0;
 }
 .bg_adv{
 	background: url(../img/bg_adv.jpg) no-repeat;
 	background-attachment: fixed;
 	background-size: cover; 
 	position: relative;
-	height: 800px;
-
+	z-index: 1;
 }
 .bg_darker {
 	position: absolute;
@@ -213,12 +211,12 @@ li .img-circle {
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.36);
+	z-index: -1;
 }
 .our_advantages .title_white{
 	font-size: 2em;
 	text-align: center;
 	color: #fff;
-	padding-top: 4em;
 }
 .desc_white{
 	color: #fff;
@@ -226,6 +224,14 @@ li .img-circle {
 	font-family: 'IM Fell Double Pica',serif;
 	font-size: 1.4em;
 	text-align: center;
+}
+.desc_qestion{
+	width: 100%;
+	height: 100%;
+	padding: 4em 0;
+}
+.q_block{
+	margin-left: 60px;
 }
 .q_desk{
 	color: #fff;
@@ -337,6 +343,20 @@ li .img-circle {
 	}
 	.tab_container{
 		width: 100%;
+	}
+	.li .img-circle {
+		width: 90px;
+		height: 90px;
+	}
+	.bg_adv, .header-bg, .bg_enjoy{
+		background-attachment: scroll; 
+	}
+
+}
+@media screen and (max-device-width: 800px){
+	.li .img-circle {
+		width: 40px;
+		height: 40px;
 	}
 }
 
