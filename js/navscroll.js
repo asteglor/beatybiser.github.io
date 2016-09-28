@@ -5,3 +5,5 @@ $(window).scroll(function() {
   $('nav').toggleClass("when_scroll", scroll_nav());
   $('whitediv').toggleClass("white_block", scroll_nav());
 });
+ $('nav').toggleClass("when_scroll", scroll_nav());
+ $('whitediv').toggleClass("white_block", scroll_nav());
