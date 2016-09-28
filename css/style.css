@@ -25,7 +25,7 @@ html, body{
 
 }
 .navbar-biser a:hover{
-	color:#dab360;
+	color:#000;
 }
 .navbar-biser {
 	z-index: 99;
@@ -362,8 +362,8 @@ li .img-circle {
 	.navbar-biser ul{
 			float: none;
 	}
-	.navbar-biser a{	
-		color:#000;
+	.navbar-brand span:first-child {
+	color:#000;
 	}
 	.icon-bar {
 		background-color: #000;
