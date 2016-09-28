@@ -98,9 +98,29 @@ html, body{
 	 text-align: center;
     font-size: 1.8em;
     color: #eee8a3;
-    position: static;
+    position: relative;
     font-family:'Glyphicons Halflings';
     text-decoration: none;
+    -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:40px;}
+    50%  {left:0px; top:0px;}
+    75%  {left:0px; top:20px;}
+    100% {left:0px; top:0px;}
+}
+@keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:40px;}
+    50%  {left:0px; top:0px;}
+    75%  {left:0px; top:40px;}
+    100% {left:0px; top:0px;}
 }
 
 .action:after{
