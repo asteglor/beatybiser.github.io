@@ -364,6 +364,9 @@ li .img-circle {
 		margin-top: 50px;
 
 	}
+	.col_more_column h3 {
+		font-size: 1.2em;
+	}
 	.service_tabs ul{
 		width: 100%;
 	}
@@ -378,7 +381,7 @@ li .img-circle {
 		font-size: 0.7em;
 	}
 	.tab_container .row .tab_img img{
-		width: 634px;
+		width: 350px;
 	}
 	.bg_adv, .header-bg, .bg_enjoy{
 		background-attachment: scroll; 
@@ -386,6 +389,12 @@ li .img-circle {
 
 }
 @media screen and (max-device-width: 414px){
+	.header_subtitle{
+		font-size: 1em;
+	}
+	.header_description {
+		font-size:1em;
+	}
 	li .img-circle {
 	width: 40px;
 	height: 40px;
