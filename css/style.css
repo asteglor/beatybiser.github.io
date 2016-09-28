@@ -460,6 +460,7 @@ li .img-circle {
 }
 .contactus_map{
 	width: 100%;
+	height: 500px;
 	position: relative;
 	overflow: visible;
 	display: block;
@@ -540,6 +541,7 @@ li .img-circle {
 .when_scroll {
 		color:#000;
 		text-align: center;
+		background-color: #fff;	
 		width: 100%;
 		padding:0;
 		border-radius: 0 4px 0 4px;
@@ -569,10 +571,7 @@ li .img-circle {
 	}
 .when_scroll .icon-bar {
 		background-color: #000;
-		webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+		
 	}
 .white_block{
 	background-color: #fff;
