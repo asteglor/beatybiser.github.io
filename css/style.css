@@ -342,6 +342,9 @@ li .img-circle {
 	list-style-type: none;
 }
 @media screen and (max-device-width: 1024px){
+	.header_title{
+		font-size: 1.4em;
+	}
 	.navbar-biser {
 		color:#000;
 		background-color: #fff;	
