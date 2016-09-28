@@ -363,7 +363,10 @@ li .img-circle {
 			float: none;
 	}
 	.navbar-brand span:first-child {
-	color:#000;
+		color:#000;
+	}
+	.navbar-biser a {
+		color:#000;
 	}
 	.icon-bar {
 		background-color: #000;
