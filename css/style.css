@@ -292,7 +292,7 @@ li .img-circle {
 	-webkit-border-radius:3px;
 	position: relative;
 }
-.enjoy_blank input{
+.enjoy_blank input, .enjoy_blank textarea{
 	background: rgba(255, 255, 255, 0.50);
 }
 .blank_title {
