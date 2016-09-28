@@ -15,7 +15,17 @@ html, body{
 	top:0;
 	right:0;
 	z-index: 99; */
+}
+.navbar-brand span {
+	color:#dab360;
 
+}
+.navbar-brand span:first-child {
+	color:#fff;
+
+}
+.navbar-biser a:hover{
+	color:#dab360;
 }
 .navbar-biser {
 	z-index: 99;
@@ -26,10 +36,7 @@ html, body{
 .navbar-biser ul{
 	float: right;
 }
-.navbar-brand span {
-	color:#dab360;
 
-}
 .icon-bar{
 	background-color: #fff;
 }
