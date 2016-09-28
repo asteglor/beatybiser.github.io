@@ -432,9 +432,9 @@ li .img-circle {
 .pq_div_hide {
 	display: none;
 }
-.pq-list>li.active>div{
+/* .pq-list>li.active>div{
 	display: block;
-}
+} */
 @media screen and (max-device-width: 1024px){
 	.header_title{
 		font-size: 1.4em;

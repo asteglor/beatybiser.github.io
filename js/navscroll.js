@@ -9,8 +9,15 @@ $(window).scroll(function() {
  $('whitediv').toggleClass("white_block", scroll_nav());
 
  $('.pq-list>li').click(function () {
-     $(this).toggleClass("active");
-  });
+ 	$(this).toggleClass("active");
+	console.log(this);
+ 	if ($(".pq-list>li.active>div").is(":hidden")) {
+        $(".pq-list>li.active>div").slideDown("slow");
+      }
+      else{
+      	$('div', this).hide();
+      }
+   });
 
 
  
