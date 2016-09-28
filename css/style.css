@@ -386,8 +386,10 @@ li .img-circle {
 	text-align: center;
 }
 .why_choose_us_subtitle {
+	font-style: italic;
+	font-family: 'IM Fell Double Pica',serif;
+	font-size: 1.4em;
 	text-align: center;
-	font-size: 1.2em;
 }
 .deploy_img img{
 	width: 75%;
@@ -432,9 +434,37 @@ li .img-circle {
 .pq_div_hide {
 	display: none;
 }
-/* .pq-list>li.active>div{
+.contactus{
+	padding: 5em 0;
+}
+.contactus_title{
+	font-size: 2em;
+	text-align: center;
+}
+.contactus_subtitle{
+	padding: 2em 0;
+	font-style: italic;
+	font-family: 'IM Fell Double Pica',serif;
+	font-size: 1.4em;
+	text-align: center;
+}
+.contactus_list li>.fa{
+	padding:0.4em 1em;
+	color:#7E7E7E;
+}
+.contactus_list li{
+	color:#7E7E7E;
+	border-color: 1px solid rgba(0,0,0,0.05);
+	border-left-width:0;
+	border-right-width:0;
+}
+.contactus_map{
+	width: 100%;
+	position: relative;
+	overflow: visible;
 	display: block;
-} */
+
+}
 @media screen and (max-device-width: 1024px){
 	.header_title{
 		font-size: 1.4em;
@@ -472,8 +502,8 @@ li .img-circle {
 		width: 100%;
 	}
 	li .img-circle {
-	width: 60px;
-	height: 60px;
+		width: 60px;
+		height: 60px;
 	}
 	.litab_title {
 		font-size: 0.7em;
