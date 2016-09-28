@@ -284,13 +284,16 @@ li .img-circle {
 	height: 600px;
 }
 .enjoy_blank{
-	background: #f7f7f7;
+	background: rgba(247, 247, 247, 0.87);
 	max-width: 450px;
 	margin: 40px auto;
 	padding: 20px 30px;
 	border-radius: 3px;
 	-webkit-border-radius:3px;
 	position: relative;
+}
+.enjoy_blank input{
+	background: rgba(255, 255, 255, 0.50);
 }
 .blank_title {
 	font-size: 2em;
