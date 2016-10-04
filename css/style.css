@@ -588,6 +588,56 @@ li .img-circle {
     transition: all 0.5s ease-in-out;
     webkit-animation: slideInDown 1s both;
     animation: slideInDown 1s both;
+}
+.bg_ft{
+	background-color: #292929;
+}
+.bg_fb{
+	background-color: #222222;
+}
+.greey{
+	color: #bdbdbd !important; 
+}
+.footer_bottom{
+	color:#a5a5a5;
+	line-height: 4;
+}
+.footer_bottom .socials{
+	float:right;
+	width: 10rem;
+}
+.footer_top{
+	color: #666;
+}
+.block{
+	display: block;
+	width: 100%;
+}
+.social_icons{
+	padding-right: 5rem;
+}
+.footer_title{
+	padding-top: 5rem;
+	color: #fff;
+	font-size: 2.5rem;
+	line-height: 1.5;
+	font-weight: 500;
+}
+.repair_services ul li{
+	line-height: 2.4;
+}
+.socials_icons a div{
+	color: #666;
+	text-decoration: none;
+	line-height: 2.4;
+}
+.socials_icons a div:hover{
+	color: #fff;
+	text-decoration: none;
+	line-height: 2.4;
+}
+.fa-padding{
+	padding-right: 1.5rem;
 }		
 /* .container-fluid .in ul{
 	text-align: right;
