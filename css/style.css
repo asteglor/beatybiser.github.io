@@ -29,9 +29,7 @@ html, body{
 }
 .navbar-biser {
 	z-index: 99;
-	padding:  3em 3em 0;
-	max-width: 1170px;
-    margin: 0 auto;
+	padding:  3em 0 0;
 }
 .navbar-biser ul{
 	float: right;
