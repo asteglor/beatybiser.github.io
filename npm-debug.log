@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'https://github.com/heaversm/google-custom-form.git' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 verbose config Skipping project config: /home/vlad/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData https://github.com/heaversm/google-custom-form.git
+9 silly fetchOtherPackageData https://github.com/heaversm/google-custom-form.git
+10 silly cache add args [ 'https://github.com/heaversm/google-custom-form.git', null ]
+11 verbose cache add spec https://github.com/heaversm/google-custom-form.git
+12 silly cache add parsed spec Result {
+12 silly cache add   raw: 'https://github.com/heaversm/google-custom-form.git',
+12 silly cache add   scope: null,
+12 silly cache add   escapedName: null,
+12 silly cache add   name: null,
+12 silly cache add   rawSpec: 'https://github.com/heaversm/google-custom-form.git',
+12 silly cache add   spec: 'git+https://github.com/heaversm/google-custom-form.git',
+12 silly cache add   type: 'hosted',
+12 silly cache add   hosted:
+12 silly cache add    { type: 'github',
+12 silly cache add      ssh: 'git@github.com:heaversm/google-custom-form.git',
+12 silly cache add      sshUrl: 'git+ssh://git@github.com/heaversm/google-custom-form.git',
+12 silly cache add      httpsUrl: 'git+https://github.com/heaversm/google-custom-form.git',
+12 silly cache add      gitUrl: 'git://github.com/heaversm/google-custom-form.git',
+12 silly cache add      shortcut: 'github:heaversm/google-custom-form',
+12 silly cache add      directUrl: 'https://raw.githubusercontent.com/heaversm/google-custom-form/master/package.json' } }
+13 verbose addRemoteGit caching https://github.com/heaversm/google-custom-form.git
+14 verbose addRemoteGit git+https://github.com/heaversm/google-custom-form.git is a repository hosted by github
+15 silly tryClone cloning git+https://github.com/heaversm/google-custom-form.git via git+https://github.com/heaversm/google-custom-form.git
+16 verbose tryClone git-https-github-com-heaversm-google-custom-form-git-bb7aaa4f not in flight; caching
+17 verbose correctMkdir /home/vlad/.npm/_git-remotes correctMkdir not in flight; initializing
+18 info git [ 'clone',
+18 info git   '--template=/home/vlad/.npm/_git-remotes/_templates',
+18 info git   '--mirror',
+18 info git   'https://github.com/heaversm/google-custom-form.git',
+18 info git   '/home/vlad/.npm/_git-remotes/git-https-github-com-heaversm-google-custom-form-git-bb7aaa4f' ]
+19 verbose mirrorRemote git+https://github.com/heaversm/google-custom-form.git git clone https://github.com/heaversm/google-custom-form.git
+20 verbose correctMkdir /home/vlad/.npm/_git-remotes correctMkdir not in flight; initializing
+21 verbose setPermissions git+https://github.com/heaversm/google-custom-form.git set permissions on /home/vlad/.npm/_git-remotes/git-https-github-com-heaversm-google-custom-form-git-bb7aaa4f
+22 verbose resolveHead git+https://github.com/heaversm/google-custom-form.git original treeish: master
+23 info git [ 'rev-list', '-n1', 'master' ]
+24 silly resolveHead git+https://github.com/heaversm/google-custom-form.git resolved treeish: 98d25d53506dde0de3559347cb64e60bb9858464
+25 verbose resolveHead git+https://github.com/heaversm/google-custom-form.git resolved Git URL: git+https://github.com/heaversm/google-custom-form.git#98d25d53506dde0de3559347cb64e60bb9858464
+26 silly resolveHead Git working directory: /tmp/npm-16754-cdb248b3/git-cache-8e7defef/98d25d53506dde0de3559347cb64e60bb9858464
+27 info git [ 'clone',
+27 info git   '/home/vlad/.npm/_git-remotes/git-https-github-com-heaversm-google-custom-form-git-bb7aaa4f',
+27 info git   '/tmp/npm-16754-cdb248b3/git-cache-8e7defef/98d25d53506dde0de3559347cb64e60bb9858464' ]
+28 verbose cloneResolved git+https://github.com/heaversm/google-custom-form.git clone Cloning into '/tmp/npm-16754-cdb248b3/git-cache-8e7defef/98d25d53506dde0de3559347cb64e60bb9858464'...
+28 verbose cloneResolved done.
+29 info git [ 'checkout', '98d25d53506dde0de3559347cb64e60bb9858464' ]
+30 verbose checkoutTreeish git+https://github.com/heaversm/google-custom-form.git checkout Note: checking out '98d25d53506dde0de3559347cb64e60bb9858464'.
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+30 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+30 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+30 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish   git checkout -b new_branch_name
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish HEAD is now at 98d25d5... Update README.md
+31 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+32 verbose updateSubmodules git+https://github.com/heaversm/google-custom-form.git submodule update
+33 error addLocal Could not install /tmp/npm-16754-cdb248b3/git-cache-8e7defef/98d25d53506dde0de3559347cb64e60bb9858464
+34 silly fetchPackageMetaData Error: EISDIR: illegal operation on a directory, read
+34 silly fetchPackageMetaData     at Error (native)
+34 silly fetchPackageMetaData  error for https://github.com/heaversm/google-custom-form.git { Error: EISDIR: illegal operation on a directory, read
+34 silly fetchPackageMetaData     at Error (native) errno: -21, code: 'EISDIR', syscall: 'read' }
+35 silly rollbackFailedOptional Starting
+36 silly rollbackFailedOptional Finishing
+37 silly runTopLevelLifecycles Finishing
+38 silly install printInstalled
+39 verbose stack Error: EISDIR: illegal operation on a directory, read
+39 verbose stack     at Error (native)
+40 verbose cwd /home/vlad/Documents/olivik/beatybiser.github.io
+41 error Linux 4.4.0-45-generic
+42 error argv "/usr/bin/nodejs" "/usr/local/bin/npm" "install" "https://github.com/heaversm/google-custom-form.git"
+43 error node v6.9.1
+44 error npm  v3.10.8
+45 error code EISDIR
+46 error errno -21
+47 error syscall read
+48 error eisdir EISDIR: illegal operation on a directory, read
+49 error eisdir This is most likely not a problem with npm itself
+49 error eisdir and is related to npm not being able to find a package.json in
+49 error eisdir a package you are trying to install.
+50 verbose exit [ -21, true ]

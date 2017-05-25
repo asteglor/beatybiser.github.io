@@ -18,5 +18,8 @@ $(window).scroll(function() {
       }
    });
 
+//https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/viewform?embedded=true
 
- 
+var o1 = "https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/viewform?embedded=true";
+var o2 = "https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/viewform?embedded=true";
+console.log('o', o1==o2, o1, o2);
