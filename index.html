@@ -378,7 +378,7 @@
 					<button type="submit" class="btn btn-warning enjoy_btn">Send message</button>
 				</form>
 				<p class="message_submit"></p>
-				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" ></iframe>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('.message_submit').text('Message is submit!')}"></iframe>
 			</div>
 		</div>	
 	</div>
