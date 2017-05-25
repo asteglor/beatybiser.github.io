@@ -17,9 +17,20 @@ $(window).scroll(function() {
       	$('div', this).hide("fast");
       }
    });
+var actionURL = "https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/formResponse?";
+var data = {
+	"entry.1210792036":'Vlad'
+};
+/*$('.enjoy_btn').on('click', function(){
+		$('#google_form').find('.form-control').each(function(id, obj){
+			data[obj.name] = $(obj).val()
+		});
+		data['submit'] = 'Submit';
+		console.log('data', data);
+	$.post(actionURL,data,function(){
+		console.log('message compleate')
+	});
 
-//https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/viewform?embedded=true
 
-var o1 = "https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/viewform?embedded=true";
-var o2 = "https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/viewform?embedded=true";
-console.log('o', o1==o2, o1, o2);
+});
+*/

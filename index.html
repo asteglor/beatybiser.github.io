@@ -14,6 +14,7 @@
 <body>
 <whitediv class=""></whitediv>
 <div class="header">
+<script type="text/javascript">var submitted=false;</script>
 	<nav class="navbar navbar-biser navbar-fixed-top">
   		<div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -357,10 +358,8 @@
 		<div class="blank_title">Enjoy exclusive Biser Center</div>
 		<div class="golden-line"></div>
 		<div class="blank_subtitle">Book time right now and we repair you car!</div>
-			<div class="blank_form">
-			<script type="text/javascript">var submitted=false;</script>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://olivik.in.ua';}"></iframe>
-				<form action="https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/formResponse?embedded=true" method="POST">
+			<div class="blank_form" id="google_form">
+			 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/formResponse?" method="post" target="hidden_iframe" onsubmit="submitted=true;"> -
 					<div class="form-group">
 						<input class="form-control" type="text" class="form-control" placeholder="Name" name="entry.1210792036">
 					</div>
@@ -373,9 +372,13 @@
 					<div class="form-group">
 					<textarea class="form-control" rows="3" placeholder="Message" name="entry.1740906427"></textarea>
 					</div>  
-					
+					 <input class="form-control" type="hidden" name="fvv" value="1">
+ 					 <input class="form-control" type="hidden" name="draftResponse" value="[null,null,&quot;3649771210531893888&quot;]">
+  					 <input  class="form-control" type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="3649771210531893888">
 					<button type="submit" class="btn btn-warning enjoy_btn">Send message</button>
 				</form>
+				
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://olivik.in.ua#enjoy';}"></iframe>
 			</div>
 		</div>	
 	</div>
