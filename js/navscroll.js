@@ -35,8 +35,6 @@ var data = {
 });
 */
 $('.enjoy_btn').on('click', function(){
-	if(submit){
 		$('.message_submit').text('Message is submit!')
-	}
 })
 
