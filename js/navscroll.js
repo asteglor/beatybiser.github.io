@@ -34,3 +34,6 @@ var data = {
 
 });
 */
+$('.enjoy_btn').on('click', function(){
+	console.log('press button')
+})
