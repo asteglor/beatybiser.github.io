@@ -39,3 +39,4 @@ $('.enjoy_btn').on('click', function(){
 		$('.message_submit').text('Message is submit!')
 	}
 })
+
