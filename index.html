@@ -357,16 +357,40 @@
 		<div class="golden-line"></div>
 		<div class="blank_subtitle">Book time right now and we repair you car!</div>
 			<div class="blank_form" id="google_form">
-			 <form action="https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/formResponse?" method="post" target="hidden_iframe" onsubmit="submitted=true;"> 
+			 <form
+					 class="js-form-validation"
+					 action="https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/formResponse?"
+					 method="post"
+					 target="hidden_iframe"
+					 onsubmit="submitted=true;"
+					 data-parsley-validate="">
 					<div class="form-group">
-						<input class="form-control" type="text" class="form-control" placeholder="Name" name="entry.1210792036">
+						<input
+								class="form-control"
+								type="text"
+								placeholder="Name"
+								name="entry.1210792036">
 					</div>
-					 <div class="form-group">
-						<input class="form-control" type="email" class="form-control" placeholder="E-mail" name="entry.922969232">
-					</div> 
-					<div class="form-group">
-						<input class="form-control" type="text" class="form-control" placeholder="Phone" name="entry.489722593">
-					</div>  
+				 	<div data-parsley-email-or-phone="1" data-parsley-validate-if-empty="">
+						 <div class="form-group">
+							<input
+									class="form-control"
+									type="email"
+									placeholder="E-mail"
+									name="entry.922969232"
+									data-parsley-length="[1, 40]"
+									data-parsley-group="email">
+						</div>
+						<div class="form-group">
+							<input
+									class="form-control"
+									type="text"
+									placeholder="Phone"
+									name="entry.489722593"
+									data-parsley-length="[1, 40]"
+									data-parsley-group="phone">
+						</div>
+					</div>
 					<div class="form-group">
 					<textarea class="form-control" rows="3" placeholder="Message" name="entry.1740906427"></textarea>
 					</div>  
@@ -413,16 +437,41 @@
 					</div>
 					<div class="col-md-6">
 					<div class="blank_form">
-						<form action="https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/formResponse?" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+						<form
+								class="js-form-validation"
+								action="https://docs.google.com/forms/d/e/1FAIpQLSdAMior_2KBXF_k8n8uPBmyf8YiVRjll6PZHXD7X91XUaNW6Q/formResponse?"
+								method="post"
+								target="hidden_iframe"
+								onsubmit="submitted=true;"
+								data-parsley-validate="">
 							<div class="form-group">
-								<input class="form-control" type="text" class="form-control" placeholder="Name" name="entry.1210792036">
+								<input
+										class="form-control"
+										type="text"
+										placeholder="Name"
+										name="entry.1210792036">
 							</div>
-							<div class="form-group">
-								<input class="form-control" type="email" class="form-control" placeholder="E-mail" name="entry.922969232">
-							</div> 
-							<div class="form-group">
-								<input class="form-control" type="text" class="form-control" placeholder="Phone" name="entry.489722593">
-							</div>  
+							<div data-parsley-email-or-phone="1" data-parsley-validate-if-empty="">
+								<div class="form-group">
+									<input
+											class="form-control"
+											type="email"
+											placeholder="E-mail"
+											name="entry.922969232"
+											data-parsley-length="[1, 40]"
+											data-parsley-group="email">
+								</div>
+								<div class="form-group">
+									<input
+											class="form-control"
+											type="text"
+											placeholder="Phone"
+											name="entry.489722593"
+											data-parsley-length="[1, 40]"
+											data-parsley-group="phone">
+								</div>
+							</div>
+							<div class="invalid-form-error-message"></div>
 							<div class="form-group">
 							<textarea class="form-control" rows="3" placeholder="Message" name="entry.1740906427"></textarea>
 							</div> 
@@ -505,8 +554,11 @@
 
 
 
-<script  type='text/javascript' src='bower_components/jquery/dist/jquery.js'></script>
-<script  type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='bower_components/jquery/dist/jquery.js'></script>
+<script type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='bower_components/parsleyjs/dist/parsley.js'></script>
+<script type='text/javascript' src='bower_components/parsleyjs/dist/i18n/ru.js'></script>
+<script type='text/javascript' src='js/form.js'></script>
 <script type='text/javascript' src='js/navscroll.js'></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcY0EqNOAz6TltDxwl6Ue2XtegbMYMavQ" type="text/javascript"></script>
 <script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(49.20512253959425,28.469356766439883),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.20512253959425,28.469356766439883)});infowindow = new google.maps.InfoWindow({content:'<strong>Beaty Biser</strong><br>Илыка 9, Винница, Украина<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
