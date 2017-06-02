@@ -15,6 +15,8 @@
 
     $.fn.setFormValidation = function() {
 
+        var l = Ladda.create(document.querySelector('.ladda-button'));
+
         var settings = {
             successClass: "has-success",
             errorClass: "has-error tex",
@@ -28,8 +30,17 @@
 
         return this.each(function () {
             $(this)
-                .parsley(settings);
-        })
+                .parsley(settings)
+                .on('form:submit', onSuccess);
+        });
+        
+        function onSuccess() {
+            l.start();
+            setTimeout(function () {
+                l.stop();
+                swal('Дякуємо за Ваше замовлення!', 'Найближчим часом наші менеджери опрацюють замовлення, та зв’яжуться з вами для підтвердження.', 'success');
+            }, 2000)
+        }
     };
 
     $('document').ready(function () {
