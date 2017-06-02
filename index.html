@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ladda-bootstrap/0.9.4/ladda-themeless.min.css">
 	<title>OLIVIK</title>
 </head>
 <body>
@@ -397,9 +399,10 @@
 					 <input class="form-control" type="hidden" name="fvv" value="1">
  					 <input class="form-control" type="hidden" name="draftResponse" value="[null,null,&quot;3649771210531893888&quot;]">
   					 <input  class="form-control" type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="3649771210531893888">
-					<button type="submit" class="btn btn-warning enjoy_btn">Send message</button>
+					 <button type="submit" class="btn btn-block btn-lg btn-warning enjoy_btn ladda-button" data-style="expand-right">
+				 		<span class="ladda-label">Замовити</span>
+			 			</button>
 				</form>
-				<p class="message_submit"></p>
 				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('.message_submit').text('Message is submit!')}"></iframe>
 			</div>
 		</div>	
@@ -478,9 +481,11 @@
 							<input class="form-control" type="hidden" name="fvv" value="1">
  							 <input class="form-control" type="hidden" name="draftResponse" value="[null,null,&quot;3649771210531893888&quot;]">
   					 		<input  class="form-control" type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="3649771210531893888">
-							<button type="submit" class="btn btn-warning enjoy_btn">Send message</button>
+							<!--<button type="submit" class="btn btn-warning enjoy_btn">Send message</button>-->
+							<button type="submit" class="btn btn-block btn-lg btn-warning enjoy_btn ladda-button" data-style="expand-right">
+								<span class="ladda-label">Замовити</span>
+							</button>
 					    </form>
-					    <p class="message_submit"></p>
 					</div>
 				</div>
 			</div>
@@ -558,6 +563,9 @@
 <script type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
 <script type='text/javascript' src='bower_components/parsleyjs/dist/parsley.js'></script>
 <script type='text/javascript' src='bower_components/parsleyjs/dist/i18n/ru.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ladda-bootstrap/0.9.4/spin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ladda-bootstrap/0.9.4/ladda.min.js"></script>
 <script type='text/javascript' src='js/form.js'></script>
 <script type='text/javascript' src='js/navscroll.js'></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcY0EqNOAz6TltDxwl6Ue2XtegbMYMavQ" type="text/javascript"></script>
