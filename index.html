@@ -7,13 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ladda-bootstrap/0.9.4/ladda-themeless.min.css">
 	<title>OLIVIK</title>
 </head>
 <body>
 <whitediv class=""></whitediv>
 <div class="header">
+<script type="text/javascript">var submitted=false;</script>
 	<nav class="navbar navbar-biser navbar-fixed-top">
   		<div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -55,7 +56,7 @@
 	<div class="container_more">
 		<div class="more_title text-center">Больше о нас</div>
 		<div class="golden-line"></div>
-		<div class="more_d text-center">Желание творить, радовать близких и конечно, большая доля энтузиазма заложили основу для дальнейшего развиттия мастерской "OliVik", которой на даный момент немного больше двух лет.</div>
+		<div class="more_d text-center">Желание творить, радовать близких и конечно, большая доля энтузиазма заложили основу для дальнейшего развития мастерской "OliVik", которой на даный момент немного больше двух лет.</div>
 		<div class="clear margin-top-80"></div>
 		<div class="more_column row">
 
@@ -469,23 +470,52 @@
 		<div class="blank_title">Enjoy exclusive Biser Center</div>
 		<div class="golden-line"></div>
 		<div class="blank_subtitle">Book time right now and we repair you car!</div>
-			<div class="blank_form">
-				<form>
+			<div class="blank_form" id="google_form">
+			 <form
+					 class="js-form-validation"
+					 action="https://docs.google.com/forms/d/e/1FAIpQLSdGUdd7EoIPmvAW8G9kA6VQoCQweM84yv-oe05_8p-ipc8FXQ/formResponse?"
+					 method="post"
+					 target="hidden_iframe"
+					 onsubmit="submitted=true;"
+					 data-parsley-validate="">
 					<div class="form-group">
-						<input class="form-control" type="text" class="form-control" placeholder="Name">
+						<input
+								class="form-control"
+								type="text"
+								placeholder="Name"
+								name="entry.1532122931">
+					</div>
+				 	<div data-parsley-email-or-phone="1" data-parsley-validate-if-empty="">
+						 <div class="form-group">
+							<input
+									class="form-control"
+									type="email"
+									placeholder="E-mail"
+									name="entry.533988967"
+									data-parsley-length="[1, 40]"
+									data-parsley-group="email">
+						</div>
+						<div class="form-group">
+							<input
+									class="form-control"
+									type="text"
+									placeholder="Phone"
+									name="entry.623179907"
+									data-parsley-length="[1, 40]"
+									data-parsley-group="phone">
+						</div>
 					</div>
 					<div class="form-group">
-						<input class="form-control" type="email" class="form-control" placeholder="E-mail">
-					</div> 
-					<div class="form-group">
-						<input class="form-control" type="text" class="form-control" placeholder="Phone">
+					<textarea class="form-control" rows="3" placeholder="Message" name="entry.1535540187"></textarea>
 					</div>  
-					<div class="form-group">
-					<textarea class="form-control" rows="3" placeholder="Message"></textarea>
-					</div> 
-					
-					<button type="submit" class="btn btn-warning enjoy_btn">Send message</button>
+					 <input class="form-control" type="hidden" name="fvv" value="1">
+ 					 <input class="form-control" type="hidden" name="draftResponse" value="[null,null,&quot;6546998421381362853&quot;]">
+  					 <input  class="form-control" type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="6546998421381362853">
+					 <button type="submit" class="btn btn-block btn-lg btn-warning enjoy_btn ladda-button" data-style="expand-right">
+				 		<span class="ladda-label">Отправить</span>
+			 			</button>
 				</form>
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {$('.message_submit').text('Message is submit!')}"></iframe>
 			</div>
 		</div>	
 	</div>
@@ -508,7 +538,7 @@
 						  9:00 - 23:00</li>
 						  <li class="list-group-item">
 								<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
-						  +380635625887 - Влад</li>
+						  +38(063) 56 25 887 - Влад</li>
 						  <li class="list-group-item">
 								<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
 						  +38(096) 39 11 244 - Виктор</li>
@@ -526,21 +556,51 @@
 					</div>
 					<div class="col-md-6">
 					<div class="blank_form">
-						<form>
+						<form
+								class="js-form-validation"
+								action="https://docs.google.com/forms/d/e/1FAIpQLSdGUdd7EoIPmvAW8G9kA6VQoCQweM84yv-oe05_8p-ipc8FXQ/formResponse?"
+								method="post"
+								target="hidden_iframe"
+								onsubmit="submitted=true;"
+								data-parsley-validate="">
 							<div class="form-group">
-								<input class="form-control" type="text" class="form-control" placeholder="Name">
+								<input
+										class="form-control"
+										type="text"
+										placeholder="Name"
+										name="entry.1532122931">
 							</div>
+							<div data-parsley-email-or-phone="1" data-parsley-validate-if-empty="">
+								<div class="form-group">
+									<input
+											class="form-control"
+											type="email"
+											placeholder="E-mail"
+											name="entry.533988967"
+											data-parsley-length="[1, 40]"
+											data-parsley-group="email">
+								</div>
+								<div class="form-group">
+									<input
+											class="form-control"
+											type="text"
+											placeholder="Phone"
+											name="entry.623179907"
+											data-parsley-length="[1, 40]"
+											data-parsley-group="phone">
+								</div>
+							</div>
+							<div class="invalid-form-error-message"></div>
 							<div class="form-group">
-								<input class="form-control" type="email" class="form-control" placeholder="E-mail">
+							<textarea class="form-control" rows="3" placeholder="Message" name="entry.1535540187"></textarea>
 							</div> 
-							<div class="form-group">
-								<input class="form-control" type="text" class="form-control" placeholder="Phone">
-							</div>  
-							<div class="form-group">
-							<textarea class="form-control" rows="3" placeholder="Message"></textarea>
-							</div> 
-							
-							<button type="submit" class="btn btn-warning enjoy_btn">Send message</button>
+							 	<input class="form-control" type="hidden" name="fvv" value="1">
+ 					 			<input class="form-control" type="hidden" name="draftResponse" value="[null,null,&quot;6546998421381362853&quot;]">
+  					 			<input  class="form-control" type="hidden" name="pageHistory" value="0"><input type="hidden" name="fbzx" value="6546998421381362853">
+							<!--<button type="submit" class="btn btn-warning enjoy_btn">Send message</button>-->
+							<button type="submit" class="btn btn-block btn-lg btn-warning enjoy_btn ladda-button" data-style="expand-right">
+								<span class="ladda-label">Отправить</span>
+							</button>
 					    </form>
 					</div>
 				</div>
@@ -615,8 +675,14 @@
 
 
 
-<script  type='text/javascript' src='bower_components/jquery/dist/jquery.js'></script>
-<script  type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='bower_components/jquery/dist/jquery.js'></script>
+<script type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='bower_components/parsleyjs/dist/parsley.js'></script>
+<script type='text/javascript' src='bower_components/parsleyjs/dist/i18n/ru.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.4/sweetalert2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ladda-bootstrap/0.9.4/spin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ladda-bootstrap/0.9.4/ladda.min.js"></script>
+<script type='text/javascript' src='js/form.js'></script>
 <script type='text/javascript' src='js/navscroll.js'></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcY0EqNOAz6TltDxwl6Ue2XtegbMYMavQ" type="text/javascript"></script>
 <script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(49.20512253959425,28.469356766439883),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.20512253959425,28.469356766439883)});infowindow = new google.maps.InfoWindow({content:'<strong>Beaty Biser</strong><br>Илыка 9, Винница, Украина<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
