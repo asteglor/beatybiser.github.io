@@ -9,6 +9,13 @@ html, body{
     font-size: 15px;
     line-height: 1.6;
 }
+:focus {
+	outline: none;
+}
+.btn {
+	outline: none !important;
+}
+
 .navbar-biser a{
 	color:#fff;
 	/* position: absolute;
