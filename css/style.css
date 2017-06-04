@@ -35,7 +35,7 @@ html, body{
 	color:#000;
 }
 .navbar-biser {
-	z-index: 99;
+	/* z-index: 99; */
 	padding:  3em 0 0;
 }
 .navbar-biser ul{
@@ -470,6 +470,9 @@ li .img-circle {
 	overflow: visible;
 	display: block;
 
+}
+.tab_container .row .tab_img img{
+	max-width: 350px;
 }
 @media screen and (max-device-width: 1024px){
 	.header_title{
