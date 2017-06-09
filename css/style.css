@@ -435,6 +435,7 @@ li .img-circle {
 }
 .pq-list>li.active:before{
 	content:"-";
+	line-height: 15px;
 }
 .pq_div_hide {
 	display: none;
