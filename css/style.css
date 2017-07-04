@@ -46,7 +46,7 @@ html, body{
 	background-color: #fff;
 }
 .header-bg{
-	background-image: url(../img/bg4.jpg);
+	background-image: url(../img/bg.jpg);
 	background-size: cover;
     width: 100%;
     /* background-attachment: fixed; */
